@@ -39,7 +39,11 @@ public class Main {
     public static void main(String[] args) {
         int[] x = {10, 8, 0, 5, 3};
         int[] v = {2, 4, 1, 1, 3};
-        System.out.println(chislo(x,v,12));
+        System.out.println("Введите длину трубы:");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        System.out.println("Число вытекших капель");
+        System.out.println(chislo(x,v,n));
 
     }
 }
